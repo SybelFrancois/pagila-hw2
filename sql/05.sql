@@ -11,6 +11,5 @@
  */
 
 
-
-select actor.last_name, actor.first_name from actor left join customer on actor.first_name = customer.first_name and actor.last_name = customer.last_name group by actor.last_name, actor.first_name order by actor.last_name asc, actor.first_name;
-
+select last_name, first_name from actor left join customer
+using (first_name, last_name) where customer_id is null order by last_name, first_name;

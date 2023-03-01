@@ -26,5 +26,5 @@ where film_id not in (
   )
   and film.film_id in (
     select distinct inventory.film_id from inventory
-  ) order by film;
+  ) order by title;
 
