@@ -4,3 +4,5 @@
  * HINT:
  * It's possible to solve this problem both with and without subqueries.
  */
+
+select title from film join inventory using (film_id) join rental using (inventory_id)  where rental.customer_id =1 group by film.film_id having count(*) > 1;

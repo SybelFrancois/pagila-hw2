@@ -9,3 +9,8 @@
  * HINT:
  * This can be solved using either a LEFT JOIN or the NOT IN operator.
  */
+
+
+
+select actor.last_name, actor.first_name from actor left join customer on actor.first_name = customer.first_name and actor.last_name = customer.last_name group by actor.last_name, actor.first_name order by actor.last_name asc, actor.first_name;
+

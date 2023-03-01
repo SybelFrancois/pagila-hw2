@@ -6,3 +6,13 @@
  * HINT:
  * The postgresqltutorial.com website has a solution for this problem.
  */
+
+
+ select t.film_id, t.title
+from (
+  select film_id, title, rental_rate
+  from film
+) t
+where t.rental_rate > (select avg(rental_rate) from film)
+order by t.title;
+
