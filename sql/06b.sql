@@ -5,4 +5,6 @@
 
 
 
- select film.title from film where film.film_id not in (select inventory.film_id from inventory) group by film.title order by film.title asc;
+ select film.title from film 
+ where film.film_id not in (select inventory.film_id from inventory) 
+ group by film.title order by film.title asc;
