@@ -1,6 +1,7 @@
 /*
  * A group of social scientists is studying American movie watching habits.
- * To help them, select the titles of all films that have never been rented by someone who lives in the United States.
+ * To help them, select the titles of all films that have never been rented by someone 
+ who lives in the United States.
  *
  * NOTE:
  * Not every film in the film table is available in the store's inventory,
